@@ -1,0 +1,59 @@
+:root {
+    --color-sky: #a8d0e6;
+    --color-mint: #c7f9cc;
+    --color-lavender: #d4c1ec;
+    --color-peach: #f8c6a9;
+    --color-sand: #f2e5d7;
+    --color-text: #3a3a3a;
+    --color-bg: #fbfaf8;
+}
+
+/* Main stylesheet */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1 {
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+.palette-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
+.palette-swatch {
+    flex: 1 1 calc(20% - 1rem);
+    min-width: 140px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.palette-swatch .swatch-color {
+    height: 120px;
+}
+
+.palette-swatch .swatch-label {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    background: #fff;
+}
+
+.palette-swatch .swatch-hex {
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.swatch-sky { background: var(--color-sky); }
+.swatch-mint { background: var(--color-mint); }
+.swatch-lavender { background: var(--color-lavender); }
+.swatch-peach { background: var(--color-peach); }
+.swatch-sand { background: var(--color-sand); }
